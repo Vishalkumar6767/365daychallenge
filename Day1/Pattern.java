@@ -1,4 +1,5 @@
-package Java.Day1;
+package Day1;
+
 //Complete the function printSquare() which takes  an integer n  as the input parameter and print the pattern.
 // Vishal Kumar
 public class Pattern {
@@ -57,9 +58,8 @@ public class Pattern {
             System.out.println();
         }
     }
-    
-   public static void printTriangle4(int n) {
-       
+
+    public static void printTriangle4(int n) {
 
         for (int i = 0; i < n; i++) {
             for (int j = 1; j <= n - i; j++) {
@@ -70,8 +70,8 @@ public class Pattern {
 
     }
 
-   public static void printTriangle5(int n) {
-       
+    public static void printTriangle5(int n) {
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 System.out.print(" ");
@@ -86,8 +86,8 @@ public class Pattern {
             System.out.println();
         }
     }
-    
-   public static void printTriangle6(int n) {
+
+    public static void printTriangle6(int n) {
         // code here
 
         for (int i = 0; i < n; i++) {
@@ -119,7 +119,6 @@ public class Pattern {
         printTriangle4(6);
         printTriangle5(6);
         printTriangle6(6);
-        
 
     }
 
