@@ -109,6 +109,43 @@ public class Pattern {
 
     }
 
+    public static void printTriangle7(int n) {
+        // code here
+        for (int i = 1; i <= 2 * n - 1; i++) {
+
+            int star = i;
+            if (i > n)
+                star = 2 * n - i;
+            for (int j = 1; j <= star; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void printTriangle8(int n) {
+        // code here
+        int space = 2 * (n - 1);
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+            for (int j = 1; j <= space; j++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j >= 1; j--) {
+
+                System.out.print(j);
+            }
+
+            System.out.println();
+            space -= 2;
+
+        }
+
+    }
+
     public static void main(String[] args) {
 
         squarePattern(6);
@@ -119,6 +156,8 @@ public class Pattern {
         printTriangle4(6);
         printTriangle5(6);
         printTriangle6(6);
+        printTriangle7(6);
+        printTriangle8(6);
 
     }
 
