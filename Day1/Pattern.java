@@ -1,6 +1,6 @@
 package Java.Day1;
 //Complete the function printSquare() which takes  an integer n  as the input parameter and print the pattern.
-
+// Vishal Kumar
 public class Pattern {
 
     public static void squarePattern(int n) {
