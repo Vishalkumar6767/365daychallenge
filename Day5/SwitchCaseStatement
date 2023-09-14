@@ -1,0 +1,17 @@
+public class SwitchCaseStatement{
+    public static double areaSwitchCase(int ch, double []a) {
+        // Write your code here
+        double ans = 0;
+        if(ch == 1){
+           
+            ans = Math.PI*a[0]*a[0];
+        }else{
+            ans = a[0]*a[1];
+            
+        }
+        return ans;
+    }
+    public static void main(String args[]){
+        areaSwitchCase(2, {2,3}) 
+    }
+}
