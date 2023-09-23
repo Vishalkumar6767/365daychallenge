@@ -30,4 +30,17 @@ public class Palindrome {
         System.out.println(palindromeNumber(n));
         sc.close();
     }
+    public static  int palindromes(int n){
+        int digit = 0;
+        int x = n;
+        while(n!=0){
+            n = n%10;
+            digit = digit*10+n;
+            n = n/10;
+        }
+
+
+        return digit;
+
+}
 }
