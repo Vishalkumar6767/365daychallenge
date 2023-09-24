@@ -1,5 +1,6 @@
 
 import java.util.*;
+
 public class Palindrome {
     public static boolean palindromeNumber(int n) {
         // Write your code here.
@@ -24,23 +25,23 @@ public class Palindrome {
         }
     }
 
-    public static void main(String args[]){
-        Scanner sc = new Scanner (System.in);
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(palindromeNumber(n));
         sc.close();
     }
-    public static  int palindromes(int n){
-        int digit = 0;
-        int x = n;
-        while(n!=0){
-            n = n%10;
-            digit = digit*10+n;
-            n = n/10;
-        }
 
+    public static int palindromes(int n) {
+        int digit = 0;
+
+        while (n != 0) {
+            n = n % 10;
+            digit = digit * 10 + n;
+            n = n / 10;
+        }
 
         return digit;
 
-}
+    }
 }
